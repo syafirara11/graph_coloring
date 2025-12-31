@@ -40,7 +40,7 @@ def get_manual_positions():
 
 # Algoritma Welch-Powell untuk pewarnaan graf
 def welch_powell_coloring(G):
-    sorted_nodes = sorted(G.nodes(), key=lambda x: G.degree(x), reverse=True)
+    sorted_nodes = sorted(G.nodes(), key=lambda x: G.degree(x), reverse=True) #mengurutkan simpul berdasarkan derajatnya secara menurun
     coloring = {}
     
     for node in sorted_nodes:
